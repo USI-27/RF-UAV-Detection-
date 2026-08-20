@@ -1,0 +1,3 @@
+{"event": "buffer_miss", "timestamp": 1783338520.017123, "system_time": 1783338520.5332737}
+{"event": "angles_detected", "timestamp": 1783340402.9548044, "peaks_count": 1, "peaks": [{"azimuth_deg": 90.0, "elevation_deg": 20.0, "snr_db": 39.180301666259766}], "system_time": 1783340403.776231}
+{"event": "angles_detected", "timestamp": 1783340644.4705215, "peaks_count": 1, "peaks": [{"azimuth_deg": 90.0, "elevation_deg": 20.0, "snr_db": 39.180301666259766}], "system_time": 1783340645.2690876}

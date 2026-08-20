@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime artifacts generated while services are running
+*_audit.jsonl
+!results/sample_audit_logs/*.jsonl
+
+# Large raw datasets (CARDRF .mat captures, processed waterfall PNGs) — see data/README.md
+data/raw/
+data/processed/
+*.mat
+
+# Editors
+.vscode/
+.idea/

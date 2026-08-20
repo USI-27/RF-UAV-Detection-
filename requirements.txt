@@ -1,0 +1,12 @@
+# Real-time pipeline (ingestion, geometry, ai_sentry, tracker, buffer_client)
+pyzmq>=25.0
+numpy>=1.24
+scipy>=1.10
+PyYAML>=6.0
+torch>=2.0
+
+# Testing
+pytest>=7.4
+
+# Offline dataset prep / notebooks (only needed if you work with raw CARDRF .mat captures)
+# scipy already covers scipy.io.loadmat used by scripts/play_mat_dataset.py

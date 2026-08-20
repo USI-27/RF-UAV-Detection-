@@ -1,0 +1,54 @@
+tracking:
+  gate_threshold_chi2: 5.99
+  max_association_distance: 15.0
+  birth_count_threshold: 3
+  death_count_threshold: 5
+  max_velocity_mps: 45.0
+  max_acceleration_mpss: 15.0
+  tracks_pub_port: 5559
+  process_noise: 0.1
+  measurement_noise_deg: 2.0
+  node_positions:
+    Node_A: [0.0, 0.0, 10.0]
+    Node_B: [500.0, 0.0, 12.0]
+geometry_engine:
+  array_radius_m: 0.06
+  speed_of_light_mps: 300000000.0
+  grid_step_deg: 2.0
+  snr_threshold_db: 5.0
+  angles_pub_port: 5558
+ai_sentry:
+  anomaly_threshold: 0.5
+  backpressure_max_queue_size: 50
+  bilstm_confidence_threshold: 0.7
+  hysteresis_required_confirmations: 3
+  hysteresis_window_size: 5
+  trigger_pub_port: 5557
+buffer:
+  eviction_policy: oldest
+  max_frames: 10000
+models:
+  autoencoder:
+    hash: f3e4445a73e807426f53c79846f2a3fca4e518970a531ef80ac9a2b4e8ff812d
+    path: models/autoencoder.pt
+  bilstm:
+    hash: 2223b293598235d4260ab3ca3021bc47900d19dc92213457bbff33222c3fd892
+    path: models/bilstm.pt
+  cnn:
+    hash: d84c0c5d3e645d50eb09519e419c1943dd75e153527b088543addf4b20f37cd1
+    path: models/cnn.pt
+node:
+  bind_address: 127.0.0.1
+  clock_skew_threshold_sec: 0.05
+  id: Node_A
+  metrics_port: 8000
+  pub_port: 5555
+  rep_port: 5556
+  security_token: coherent-sdr-auth-token-2026
+sdr:
+  center_freqs_hz:
+  - 2400000000
+  - 5800000000
+  frame_size_samples: 1024
+  num_antennas: 5
+  sample_rate_hz: 2400000
